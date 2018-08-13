@@ -37,14 +37,14 @@
                                 </div>
                                 <div class="product_tags hidden-sm">
                                     <p>Могут понадобиться:</p>
-                                    <a href="#" class="url--link" v-for="item in product.assocProducts.split(';')">{{item }};</a>
+                                    <a href="#" class="url--link" v-for="item in product.assocProducts.split(';')">{{ item }};</a>
                                 </div>
                                 <div class="product_units">
                                     <div class="unit--wrapper">
-                                        <div :class="['unit--select', {'unit--active': product.isActive}]" v-on:click="product.isActive=!product.isActive">
+                                        <div :class="['unit--select', {'unit--active': product.isActive}]" v-on:click="product.isActive = !product.isActive">
                                             <p class="ng-binding">За м. кв.</p>
                                         </div>
-                                        <div :class="['unit--select', {'unit--active': !product.isActive}]" v-on:click="product.isActive=!product.isActive">
+                                        <div :class="['unit--select', {'unit--active': !product.isActive}]" v-on:click="product.isActive = !product.isActive">
                                             <p class="ng-binding">За упаковку</p>
                                         </div>
                                     </div>
@@ -76,7 +76,7 @@
                                         <div class="unit--desc-t">
                                             <p>
                                                 <span class="ng-binding">Продается {{ product.unitFull | unitChange }}:</span>
-                                                <span class="unit--infoInn">{{ product.unitRatio }} {{ product.unit }} = {{ product.unitRatioAlt | roundValue}} {{ product.unitAlt }} </span>
+                                                <span class="unit--infoInn">{{ product.unitRatio }} {{ product.unit }} = {{ product.unitRatioAlt | roundValue }} {{ product.unitAlt }} </span>
                                             </p>
                                         </div>
                                     </div>

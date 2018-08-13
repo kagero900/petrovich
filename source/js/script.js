@@ -1,8 +1,10 @@
 let app = new Vue ({
   el: '#app',
-  data: {
-    //isActive: true,
-    products: []
+  data: function () {
+    return {
+      isActive: true,
+      products: []
+  }
   },
   mounted: function () {
     var self = this;
@@ -41,14 +43,14 @@ let app = new Vue ({
   },
   methods: {
     setRetailPrice (val) {
-      if (1==1) {
+      if (val.isActive) {
         return val.priceRetail;
       } else {
         return val.priceRetailAlt;
       }
     },
     setGoldenPrice (val) {
-      if (1==1) {
+      if (val.isActive) {
         return val.priceGold;
       } else {
         return val.priceGoldAlt;
@@ -80,6 +82,4 @@ let app = new Vue ({
       }
     }
   }
-
-
 })

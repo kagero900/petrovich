@@ -48,7 +48,7 @@ gulp.task('serve', ['script'], function() {
     ui: false
   });
 
-  gulp.watch('source/js/**/*.js', ['script']);
+  gulp.watch('source/js/*.js', ['script']);
   gulp.watch('source/*.html').on('change', server.reload);
 });
 
