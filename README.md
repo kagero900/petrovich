@@ -1,8 +1,12 @@
-Тестовое задание.
+<h3>Тестовое задание.</h3>
+
+<hr>
 
 В исходных данных есть пример html-шаблона товара.
 
-[Демо](https://kagero900.github.io/petrovich/build/) | [Тех. задание](https://kagero900.github.io/petrovich/build/)
+![Template](https://github.com/kagero900/petrovich/blob/master/Screenshot_20.png)
+
+[Демо](https://kagero900.github.io/petrovich/build/) 
 
 Необходимо отобразить на странице список товаров в момент загрузки страницы. Данные для каждого товара можно получить из файла product.json.
 
